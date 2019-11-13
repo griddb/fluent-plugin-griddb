@@ -74,8 +74,7 @@ griddb: {"col1":"2018-09-20T12:08:20.000Z","col2":"gs_admin","col3":null}
 
 param|value
 --------|------
-host|database host(require)
-port|database port(default: 8080)
+host|URL to GridDB WebAPI(require)
 cluster|cluster name(require)
 database|database name(require). Use only "public"
 container|container name(require)
@@ -89,8 +88,7 @@ Below is detail examples when using fluent-plugin-griddb in some scenarios.
 ```
 <match griddb>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container container_1
@@ -147,8 +145,7 @@ Below configuration allow send 1 insert data request after receive 3 records
 ```
 <match griddb_**>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container container_1
@@ -204,8 +201,7 @@ Below configuration allow send 1 insert data request each 10 seconds
 ```
 <match griddb_**>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container container_1
@@ -260,8 +256,7 @@ Below configuration allow send insert request to multiple containers base on eve
 ```
 <match griddb_**>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container ${tag}
@@ -339,8 +334,7 @@ The configuration for griddb plugin is the same:
 ```
 <match griddb_**>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container container_1
@@ -387,8 +381,7 @@ Before data is sent to GridDB, we need to flatten JSON data with "filter_record_
 # input data is : griddb_pc_status : {"col1":"2019-04-05T14:28:22.918Z","col2":"9.813"}
 <match griddb_**>
    @type griddb
-   host localhost
-   port 8080
+   host http://localhost:8080/
    cluster defaultCluster
    database public
    container container_1
