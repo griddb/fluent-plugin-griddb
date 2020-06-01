@@ -1,8 +1,8 @@
 
 ## Installation
 ### Requirements
-* Ruby version 2.1
-* Fluentd version 1.0
+* Ruby version 2.6
+* Fluentd version 1.9, 1.10
 
 ### Install plugin from local source code
 Download fluent-plugin-griddb plugin
