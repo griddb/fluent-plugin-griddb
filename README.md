@@ -7,11 +7,11 @@ GridDB Plugin for [Fluentd](http://fluentd.org) is a Fluentd out plugin to inser
 ## Operating environment
 
 Building of the plugin and execution have been checked in the following environment.
-- OS: CentOS 7.6(x64)
-- [GridDB Server and Java Client](https://github.com/griddb/griddb_nosql): 4.3
-- [GridDB WebAPI](https://github.com/griddb/webapi): 2.1
+- OS: CentOS 7.9(x64)
+- [GridDB Server and Java Client](https://github.com/griddb/griddb_nosql): 4.6
+- [GridDB WebAPI](https://github.com/griddb/webapi): 2.2
 - Ruby: 2.6
-- [Fluentd](https://github.com/fluent/fluentd): 1.9, 1.10
+- [Fluentd](https://github.com/fluent/fluentd): 1.14
 
 ## QuickStart
 
